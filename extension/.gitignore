@@ -1,0 +1,43 @@
+# General
+*.log
+*.bak
+*~
+*.swp
+*.swo
+._*
+.DS_Store
+
+# Node.js and Vite with pnpm
+node_modules/
+.pnpm/           # pnpm's virtual store
+dist/          # Built files
+.local
+.DS_Store
+*.env *.pem
+/dist*
+.history        # vue-router-mock
+/coverage       # vitest
+/tmp
+
+# pnpm specific
+pnpm-lock.yaml
+
+# Logs and temp files
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor related
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# System files
+.DS_Store
+Thumbs.db
