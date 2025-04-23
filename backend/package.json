@@ -1,14 +1,22 @@
 {
-  "name": "grammix-proxy",
+  "name": "grammar-correction-api",
+  "version": "1.0.0",
+  "description": "API for grammar and spelling correction using Gemini",
+  "main": "src/index.ts",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
-    "hono": "^4.7.7"
+    "@hono-rate-limiter/cloudflare": "^0.2.2",
+    "hono": "^4.7.7",
+    "hono-rate-limiter": "^0.4.2",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
-    "wrangler": "^4.4.0"
+    "@cloudflare/workers-types": "^4.20250423.0",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.13.0"
   }
 }
