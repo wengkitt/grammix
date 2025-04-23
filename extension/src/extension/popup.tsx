@@ -1,6 +1,7 @@
 /// <reference types="chrome" />
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
+import "./popup.css";
 
 const Popup: React.FC = () => {
   const [text, setText] = useState<string>("");
