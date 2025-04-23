@@ -1,15 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "Grammar Corrector",
-  "version": "1.0",
-  "description": "Highlight text and correct grammar using Google Gemini 2.0 Flash Lite.",
+  "name": "Grammix",
+  "version": "1.0.1",
+  "description": "Highlight text and correct grammar using Grammix.",
   "permissions": ["contextMenus", "storage", "activeTab", "clipboardWrite"],
-  "host_permissions": ["https://generativelanguage.googleapis.com/*"],
+  "host_permissions": ["https://grammix-proxy.wengkitt10-616.workers.dev/*"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
     "default_popup": "src/extension/popup.html",
-    "default_title": "Grammar Corrector"
+    "default_title": "Grammix"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   }
 }

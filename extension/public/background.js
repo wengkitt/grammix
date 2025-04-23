@@ -2,7 +2,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: "grammarCorrect",
-    title: "Grammar Correct",
+    title: "Grammar Correct with Grammix",
     contexts: ["selection"],
   });
 });
