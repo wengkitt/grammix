@@ -42,15 +42,14 @@ async function callGrammixAPI(text) {
     });
 
     if (!response.ok) {
-      const errorData = await response.json();
-      const errorMessage = errorData.message || response.statusText;
       throw new Error(
-        `Grammix API error (${response.status}): ${errorMessage}`
+        `Grammix API error (${response.status}): ${response.statusText}`
       );
     }
 
-    const data = await response.json();
-    return data?.correctedText?.trim() || ""; // Trim to remove any extra whitespace
+    const data = await response.text();
+    console.log(data);
+    return data.trim() || ""; // Trim to remove any extra whitespace
   } catch (error) {
     console.error("Error calling Grammix API:", error);
     return ""; // Or handle the error as appropriate for your application

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && cpx public/* dist && cpx src/extension/popup.html dist",
+    "build": "tsc -b && vite build && cpx \"public/**/*\" dist && cpx \"src/extension/popup.html\" dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
